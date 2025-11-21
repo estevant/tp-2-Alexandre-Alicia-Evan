@@ -3,7 +3,7 @@
 # Fonction Create
 create_user() {
     if [ -z "$1" ]; then
-        echo "Erreur: Nom d'utilisateur manquant pour la création."
+        echo "[ERROR]: Nom d'utilisateur manquant pour la création."
         return 1
     fi
     echo "[CREATE] Utilisateur '$1' a été créé avec succès."
@@ -12,7 +12,7 @@ create_user() {
 # Fonction Update
 update_user() {
     if [ -z "$1" ]; then
-        echo "Erreur: Nom d'utilisateur manquant pour la mise à jour."
+        echo "[ERROR]: Nom d'utilisateur manquant pour la mise à jour."
         return 1
     fi
     echo "[UPDATE] Utilisateur '$1' a été mis à jour."
@@ -21,7 +21,7 @@ update_user() {
 # Fonction Delete
 delete_user() {
     if [ -z "$1" ]; then
-        echo "Erreur: Nom d'utilisateur manquant pour la suppression."
+        echo "[ERROR]: Nom d'utilisateur manquant pour la suppression."
         return 1
     fi
     echo "[DELETE] Utilisateur '$1' a été supprimé."
